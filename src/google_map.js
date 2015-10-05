@@ -21,10 +21,7 @@ import pick from 'lodash.pick';
 import assign from 'lodash.assign';
 import isNumber from 'lodash.isnumber';
 
-const ReactDOM = isReact14(React)
-  ? require('react-dom')
-  : React;
-
+const ReactDOM = React;
 
 const kEPS = 0.00001;
 const K_GOOGLE_TILE_SIZE = 256;
