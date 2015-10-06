@@ -21,6 +21,8 @@ import pick from 'lodash.pick';
 import assign from 'lodash.assign';
 import isNumber from 'lodash.isnumber';
 
+import utils from './utils';
+
 const ReactDOM = React;
 
 const kEPS = 0.00001;
@@ -53,6 +55,8 @@ const latLng2Obj = (latLng) => isPlainObject(latLng)
     : {lat: latLng[0], lng: latLng[1]};
 
 export default class GoogleMap extends Component {
+
+  static utils = utils;
 
   static propTypes = {
     apiKey: PropTypes.string,
