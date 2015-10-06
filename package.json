@@ -11,8 +11,7 @@
     "clean": "rimraf lib dist",
     "prepublish": "npm run clean && npm run build",
     "lint": "eslint src",
-    "test": "NODE_ENV=eee mocha --compilers js:babel/register --recursive",
-    "preintall": "npm run build:lib"
+    "test": "NODE_ENV=eee mocha --compilers js:babel/register --recursive"
   },
   "repository": {
     "type": "git",
